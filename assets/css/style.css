@@ -2,7 +2,7 @@
  * @Author: Zhiye Mo 
  * @Date: 2018-04-20 17:47:46 
  * @Last Modified by: Zhiye Mo
- * @Last Modified time: 2018-04-22 09:33:45
+ * @Last Modified time: 2018-04-22 16:12:21
  */
 *{
     padding: 0;
@@ -70,7 +70,7 @@ h1{
 }
 
 /*index page photo*/
-.myPhoto{
+.img-fluid{
     width: 200px;
     height: 200px;
     float: left;
@@ -104,7 +104,7 @@ h1{
 .mainbox{
     background-color: lightyellow;
     width: 960px;
-    height: 580px;
+    height: 750px;
     margin: 0 auto;
     opacity: 0.95;
     border: 2px solid #dddddd;
@@ -124,7 +124,7 @@ h1{
 /*background div*/
 .bk-image{
     width: 100%px;
-    height: 650px;
+    height: 850px;
     padding-top: 20px;
     background: url(https://data.whicdn.com/images/12042297/large.jpg);
 }
@@ -170,11 +170,19 @@ h1{
     position: relative;
     float: left;
     padding: 5px;
+    transition: width 2s;
+    -moz-transition:width 2s; /* Firefox 4 */
+    -webkit-transition:width 2s; /* Safari and Chrome */
+    -o-transition:width 2s;
+}
+
+.frame:hover{
+    width: 250px;
 }
 
 /*Portfolios comments*/
 .comment{
-    width: 95%;
+    width: 200px;
     height: 25px;
     background-color: rgb(74, 170, 165);
     color: white;
@@ -191,4 +199,21 @@ h1{
 
 .navbar-brand{
     color: white;
+}
+
+/*media */
+@media screen and (max-width: 991px) {
+
+nav{
+    width: 991px;
+    margin: 0 auto;
+}
+
+footer{
+    width: 991px;
+}
+
+.bk-image{
+    width: 991px;
+}
 }
